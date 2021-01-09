@@ -5,11 +5,11 @@ export default function makeAllItemsRequest({ parseQueryString, get }) {
     };
     try {
       const queryString = parseQueryString(httpRequest?.query || {});
-      const requestedItem = await get(`sites/MLA/search?${queryString}`);
+      const requestedItems = await get(`sites/MLA/search?${queryString}`);
       return {
         headers,
         statusCode: 200,
-        body: requestedItem,
+        body: requestedItems,
       };
     } catch (error) {
       return {

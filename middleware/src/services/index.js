@@ -8,7 +8,7 @@ const headers = () => {
   };
 };
 
-export async function get(url, params = {}) {
+export async function get(url) {
   const response = await fetch(`${API_URL}${url}`, {
     method: "GET",
     headers: headers(),

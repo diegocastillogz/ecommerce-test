@@ -1,0 +1,32 @@
+@import "styles/variables.scss";
+
+
+
+.searchInput {
+    $border-radius-width: 0.2rem;
+    display: flex;
+    margin: auto 2rem auto 0;
+    height: 2rem;
+    width: 70%;
+
+    &__inputBox {
+        width: 100%;
+        border: 0;
+        box-shadow: 0 1px 2px 0 $box-shadow-color;
+        border-top-left-radius: $border-radius-width;
+        border-bottom-left-radius: $border-radius-width;
+    }
+
+    &__searchButton {
+        display: flex;
+        border: 0;
+        background-color: $primary-gray;
+        border-top-right-radius: $border-radius-width;
+        border-bottom-right-radius: $border-radius-width;
+
+        img {
+            height: 1rem;
+            margin: auto;
+        }
+    }
+}

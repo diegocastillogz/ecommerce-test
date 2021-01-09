@@ -1,0 +1,14 @@
+@import "styles/variables.scss";
+
+.categoriesBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $gray-font;
+  font-size: $small-font;
+  margin-top: 0.5rem;
+
+  li {
+    padding: 0.1rem 0.3rem;
+  }
+}

@@ -1,10 +1,14 @@
-export const parseQueryString = (params) =>
-  Object.keys(params)
-    .map((key) => {
-      if (key === "search") return `q=:${encodeURIComponent(params[key])}`;
-      return `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`;
-    })
-    .join("&");
+export const parseQueryString = (params) => {
+  if (Object.entries(params).length) {
+    return Object.keys(params)
+      .map((key) => {
+        if (key === "search") return `q=:${encodeURIComponent(params[key])}`;
+        return `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`;
+      })
+      .join("&");
+  }
+  return "q=:query";
+};
 
 export const formatListSctructure = ({
   results,
@@ -13,11 +17,10 @@ export const formatListSctructure = ({
 }) => {
   if (!results.length) return [];
   const categoriesObjects = [
-    ...(available_filters[0].values || []),
-    ...(filters[0].values[0].path_from_root || []),
+    ...(available_filters[0]?.values || []),
+    ...(filters[0]?.values[0]?.path_from_root || []),
   ];
   const categoriesNames = getCategoriesNames(categoriesObjects);
-
   const formatedData = setListStructure(results, categoriesNames);
   return formatedData;
 };
