@@ -1,14 +1,23 @@
 @import "styles/variables.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background-color: $primary-color;
   position: fixed;
-  padding: 0.5rem 0.8rem;
+  z-index: 999;
   width: 100%;
+  &__container {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
 
-  &__nav_logo {
+    @media (min-width: $sm-breakpoint) {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  &__navLogo {
     display: flex;
 
     img {

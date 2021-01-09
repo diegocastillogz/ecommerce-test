@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  exclude: ["dist/"],
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
     sourceType: "module",

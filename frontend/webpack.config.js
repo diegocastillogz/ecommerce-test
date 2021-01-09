@@ -45,6 +45,11 @@ const FILES_RULES = {
 };
 
 module.exports = {
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+  },
   module: {
     rules: [JAVASCRIPT_RULES, SASS_RULES, FILES_RULES],
   },
@@ -52,4 +57,7 @@ module.exports = {
     alias: ALIAS_PATHS,
   },
   plugins: [new HTMLWebpackPlugin(HTML_PLUGIN_SETTINGS)],
+  devServer: {
+    historyApiFallback: true,
+  },
 };

@@ -4,4 +4,15 @@
   background-color: $background-color;
   height: 100vh;
   padding-top: 3rem;
+
+  @media (min-width: $sm-breakpoint) {
+    height: auto;
+  }
+
+  &__children {
+    @media (min-width: $sm-breakpoint) {
+      width: 80%;
+      margin: auto;
+    }
+  }
 }

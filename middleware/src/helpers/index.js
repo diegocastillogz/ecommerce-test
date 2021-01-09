@@ -17,8 +17,8 @@ export const formatListSctructure = ({
 }) => {
   if (!results.length) return [];
   const categoriesObjects = [
-    ...(available_filters[0]?.values || []),
     ...(filters[0]?.values[0]?.path_from_root || []),
+    ...(available_filters[0]?.values || []),
   ];
   const categoriesNames = getCategoriesNames(categoriesObjects);
   const formatedData = setListStructure(results, categoriesNames);

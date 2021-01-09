@@ -12,7 +12,7 @@ const useGetData = (url, setData) => {
       }
     };
     fetchData();
-  }, []);
+  }, [url]);
 };
 
 export default useGetData;

@@ -1,32 +1,35 @@
 @import "styles/variables.scss";
 
-
-
 .searchInput {
-    $border-radius-width: 0.2rem;
+  $border-radius-width: 0.2rem;
+  display: flex;
+  margin: auto 2rem auto 0;
+  height: 2rem;
+  width: 70%;
+
+  @media (min-width: $sm-breakpoint) {
+    margin-right: 0;
+  }
+
+  input {
+    width: 100%;
+    border: 0;
+    box-shadow: 0 1px 2px 0 $box-shadow-color;
+    border-top-left-radius: $border-radius-width;
+    border-bottom-left-radius: $border-radius-width;
+    padding-left: 0.5rem;
+  }
+
+  button {
     display: flex;
-    margin: auto 2rem auto 0;
-    height: 2rem;
-    width: 70%;
+    border: 0;
+    background-color: $primary-gray;
+    border-top-right-radius: $border-radius-width;
+    border-bottom-right-radius: $border-radius-width;
 
-    &__inputBox {
-        width: 100%;
-        border: 0;
-        box-shadow: 0 1px 2px 0 $box-shadow-color;
-        border-top-left-radius: $border-radius-width;
-        border-bottom-left-radius: $border-radius-width;
+    img {
+      height: 1rem;
+      margin: auto;
     }
-
-    &__searchButton {
-        display: flex;
-        border: 0;
-        background-color: $primary-gray;
-        border-top-right-radius: $border-radius-width;
-        border-bottom-right-radius: $border-radius-width;
-
-        img {
-            height: 1rem;
-            margin: auto;
-        }
-    }
+  }
 }

@@ -1,17 +1,17 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import useGetData from "hooks/useGetData";
-import CategoriesBox from "shared/categoriesBox";
-import ItemsList from "shared/itemsList";
+
+import MainContent from "../../shared/mainContent";
 
 const ItemsListView = () => {
   const [apiResponse, setApiResponse] = useState([]);
-  useGetData("api/items", setApiResponse);
-
+  useGetData("/items", setApiResponse);
+  
   return (
-    <Fragment>
-      <CategoriesBox categories={apiResponse.categories} />
-      <ItemsList itemsList={apiResponse.items} />
-    </Fragment>
+    <MainContent
+      categories={apiResponse.categories}
+      itemsList={apiResponse.items}
+    />
   );
 };
 

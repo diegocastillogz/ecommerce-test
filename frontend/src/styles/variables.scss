@@ -1,8 +1,16 @@
 //font-sizes
 $small-font: 0.8rem;
 $normal-font: 1rem;
-$big-font: 1.5rem;
+$medium-font: 1.2rem;
+$big-font: 1.4rem;
+$biggest-font: 2rem;
 
+//media queries breakpoints
+$xxs-breakpoint: 328px;
+$xs-breakpoint: 482px;
+$sm-breakpoint: 768px;
+$md-breakpoint: 1024px;
+$lg-breakpoint: 1440px;
 
 // colors
 $primary-color: #fff159;
@@ -10,6 +18,8 @@ $background-color: #ebebeb;
 
 $primary-gray: #ededee;
 $gray-font: #666;
+
+$primary-blue: #3483fa;
 
 $white: #fff;
 $black: #000;
