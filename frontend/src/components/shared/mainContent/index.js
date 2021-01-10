@@ -5,8 +5,8 @@ import NoResults from "shared/noResults";
 
 const MainContent = ({ categories, itemsList }) => (
   <Fragment>
-    {categories?.length && <CategoriesBox categories={categories} />}
-    {itemsList?.length ? <ItemsList itemsList={itemsList} /> : <NoResults />}
+    {!!categories?.length && <CategoriesBox categories={categories} />}
+    {!!itemsList?.length ? <ItemsList itemsList={itemsList} /> : <NoResults />}
   </Fragment>
 );
 

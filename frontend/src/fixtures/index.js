@@ -17,10 +17,10 @@ export const CATEGORIES_MOCK = [
 export const ITEMS_LIST = [
   {
     id: "MLA867170881",
-    title: "Bateria De 5 Cuerpos + Banqueta Y Platillos Natal Dna Gris",
+    title: "Bateria De 5 Cuerpos",
     author: 586015428,
     price: {
-      amount: 35075.82,
+      amount: 22000.82,
       currency: "ARS",
       decimals: 0,
     },
@@ -28,13 +28,15 @@ export const ITEMS_LIST = [
     condition: "new",
     freeShipping: true,
     city: "Buenos Aires",
+    description:
+      "Desde LARPON les traemos la Batería NATAL DNA de 5 cuerpos con butaca y platillos: Encuentra tu ritmo con Natal DNA, la manera perfecta de comenzar tu viaje de baterista. La dureza y calidez de su madera le dan un gran sonido. Ideal para practicar en el hogar y presentaciones locales.",
   },
   {
     id: "MLA822315109",
     title: "Bateria Completa Natal 5 Cuerpos Fierros Platillos Banqueta",
     author: 155107410,
     price: {
-      amount: 32390,
+      amount: 15500,
       currency: "ARS",
       decimals: 0,
     },
@@ -48,7 +50,7 @@ export const ITEMS_LIST = [
     title: "Batería Mapex Tornado Iii + Fierros + Platillos + Banqueta",
     author: 52130335,
     price: {
-      amount: 72250,
+      amount: 35700,
       currency: "ARS",
       decimals: 0,
     },
@@ -62,7 +64,7 @@ export const ITEMS_LIST = [
     title: "Bateria De 5 Cuerpos + Banqueta Y Platillos Natal Dna Roja",
     author: 586015428,
     price: {
-      amount: 35075.82,
+      amount: 12800.82,
       currency: "ARS",
       decimals: 0,
     },

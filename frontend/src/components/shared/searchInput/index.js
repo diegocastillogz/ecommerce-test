@@ -9,10 +9,13 @@ const SearchInput = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    history.push({
-      pathname: "/items",
-      search: `?search=${userInput}`,
-    });
+    console.log(userInput);
+    if (userInput && userInput !== undefined) {
+      history.push({
+        pathname: "/items",
+        search: `?search=${userInput}`,
+      });
+    }
   };
 
   return (
@@ -21,8 +24,8 @@ const SearchInput = () => {
         placeholder="Nunca dejes de buscar"
         onChange={({ target: { value } }) => setUserInput(value)}
       />
-      <button type="button" alt="buscar">
-        {/* <img alt="buscar" src={searchIconImage} /> */}
+      <button type="submit" alt="buscar">
+        <img alt="buscar" src={searchIconImage} />
       </button>
     </form>
   );

@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/api";
+const API = process.env.MIDDLEWARE;
 
 const headers = {
   Accept: "application/json",
