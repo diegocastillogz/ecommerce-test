@@ -29,6 +29,7 @@ const ALIAS_PATHS = {
   helpers: path.resolve(__dirname, "./src/helpers/"),
   hooks: path.resolve(__dirname, "./src/hooks/"),
   styles: path.resolve(__dirname, "./src/styles/"),
+  fixtures: path.resolve(__dirname, "./src/fixtures/"),
 };
 
 const HTML_PLUGIN_SETTINGS = {

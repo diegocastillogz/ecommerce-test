@@ -9,10 +9,10 @@ const SearchResultsItemsView = () => {
   const url = `${pathname}${search}`;
 
   useGetData(url, setApiResponse);
-
   return (
     <MainContent
       itemsList={apiResponse.items}
+      categories={apiResponse.categories}
     />
   );
 };

@@ -3,4 +3,8 @@
 .itemsList {
   padding-top: 1rem;
   background-color: $white;
+
+  @media (min-width: $sm-breakpoint) {
+    height: calc(100vh - 6.5rem);
+  }
 }

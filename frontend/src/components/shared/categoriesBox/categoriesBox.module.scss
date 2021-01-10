@@ -8,6 +8,11 @@
   font-size: $small-font;
   margin-top: 0.5rem;
 
+  @media (min-width: $sm-breakpoint) {
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+  }
+
   li {
     padding: 0.1rem 0.3rem;
   }

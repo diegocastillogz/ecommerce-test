@@ -21,8 +21,8 @@ const SearchInput = () => {
         placeholder="Nunca dejes de buscar"
         onChange={({ target: { value } }) => setUserInput(value)}
       />
-      <button type="button">
-        <img alt="buscar" src={searchIconImage} />
+      <button type="button" alt="buscar">
+        {/* <img alt="buscar" src={searchIconImage} /> */}
       </button>
     </form>
   );

@@ -6,7 +6,6 @@ import MainContent from "../../shared/mainContent";
 const ItemsListView = () => {
   const [apiResponse, setApiResponse] = useState([]);
   useGetData("/items", setApiResponse);
-  
   return (
     <MainContent
       categories={apiResponse.categories}

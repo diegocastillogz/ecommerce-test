@@ -19,6 +19,7 @@ const ItemBox = ({
             <p>{setCurrencyFormat(price.amount)} </p>
             {freeShipping && (
               <div
+                data-testid="free-shipping-image"
                 className={styles.itemBox__freeShipping}
                 aria-label="envio gratis"
               />
