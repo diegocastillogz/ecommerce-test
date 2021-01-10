@@ -16,12 +16,17 @@ export const formatListSctructure = ({
   available_filters,
 }) => {
   if (!results.length) return [];
+
+  const MAX_ITEMS_RESULTS = 4;
+
+  const itemsRequiredResults = results.slice(0, MAX_ITEMS_RESULTS);
+
   const categoriesObjects = [
     ...(filters[0]?.values[0]?.path_from_root || []),
     ...(available_filters[0]?.values || []),
   ];
   const categoriesNames = getCategoriesNames(categoriesObjects);
-  const formatedData = setListStructure(results, categoriesNames);
+  const formatedData = setListStructure(itemsRequiredResults, categoriesNames);
   return formatedData;
 };
 
