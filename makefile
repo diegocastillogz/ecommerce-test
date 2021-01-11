@@ -42,6 +42,3 @@ unit-tests:
 
 e2e-tests-console:
 	docker exec -it frontend sh -c "npm run cy:run"
-
-e2e-tests-ui:
-	docker exec -it frontend sh -c "npm run cy:open"
