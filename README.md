@@ -18,7 +18,7 @@
  ## ¿Cómo correr el proyecto?
 En la raiz de este repositorio se deben ejecutar `make build` y despues `make start`, despues para ver el frontend debes entrar en tu navegador en ```http://localhost:8081``` y el middleware en ```http://localhost:8082```, en la siguiente sección se explica detenidamente los comandos disponibles.
 
-También se puede correr sin docker, cuya explicación esta en la sección de correr sin docker.
+También se puede `Correr sin docker`, cuya explicación esta en la sección de correr sin docker.
 
  ## Comandos
 
@@ -65,6 +65,8 @@ Para correrlo en modo production se debe crear el build con `npm run build` y se
  ## Pruebas e2e en UI
 
  Por cuestiones de tiempo no se ejecuto la funcionalidad para correr las pruebas e2e con cypress desde el ui con el contenedor de docker, por lo cual es necesario correr el proyecto como se explica en `Correr sin docker`, entrar en la carpeta de frontend y ejecutar `npm run cy:open` el cual abrirá una instancia de electron de cypress que permitira ver y ejecutar las pruebas e2e desarrolladas en este proyecto.
+
+En el siguiente [issue](https://github.com/diegocastillogz/ecommerce-test/issues/1) del repositorio estan adjuntos los videos de las pruebas.
 
 
  ## Webpack
