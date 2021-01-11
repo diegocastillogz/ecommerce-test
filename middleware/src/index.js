@@ -3,9 +3,12 @@ import cors from "cors";
 import "module-alias/register";
 import makeExpressCallback from "@expressCallback";
 import { getAllItems, getOneItemById } from "@controllers";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
-const port = 3000;
+// eslint-disable-next-line no-undef
+const port = process.env.PORT;
 
 const options = {
   allowedHeaders: [

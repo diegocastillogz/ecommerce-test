@@ -9,7 +9,6 @@ const SearchInput = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(userInput);
     if (userInput && userInput !== undefined) {
       history.push({
         pathname: "/items",

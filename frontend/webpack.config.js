@@ -1,5 +1,6 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const Dotenv = require("dotenv-webpack");
 
 const JAVASCRIPT_RULES = {
   test: /\.js$/,
@@ -57,8 +58,10 @@ module.exports = {
   resolve: {
     alias: ALIAS_PATHS,
   },
-  plugins: [new HTMLWebpackPlugin(HTML_PLUGIN_SETTINGS)],
+  plugins: [new HTMLWebpackPlugin(HTML_PLUGIN_SETTINGS), new Dotenv()],
   devServer: {
     historyApiFallback: true,
+    port: 8081,
+    host: "0.0.0.0",
   },
 };

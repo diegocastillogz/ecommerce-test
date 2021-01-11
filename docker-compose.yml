@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  middleware:
+    build: ./middleware
+    container_name: middleware
+    restart: unless-stopped
+    environment:
+      API: https://api.mercadolibre.com/
+      PORT: 8082
+    expose:
+      - 8082
+    ports:
+      - "8082:8082"
+
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    restart: unless-stopped
+    environment:
+      DISPLAY
+      MIDDLEWARE: http://localhost:8082/api
+    expose:
+      - 8081
+    ports:
+      - "8081:8081"
+    links:
+      - middleware
+    depends_on:
+      - middleware

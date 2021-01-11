@@ -1,5 +1,9 @@
 import fetch from "node-fetch";
-const API_URL = "https://api.mercadolibre.com/";
+import dotenv from "dotenv";
+
+dotenv.config();
+// eslint-disable-next-line no-undef
+const API_URL = process.env.API;
 
 const headers = () => {
   return {

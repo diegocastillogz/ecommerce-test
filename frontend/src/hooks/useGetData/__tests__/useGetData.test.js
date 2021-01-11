@@ -15,7 +15,7 @@ describe("useGetData hook test", () => {
     await act(() => renderHook(() => useGetData("testurl")));
 
     expect(global.fetch).toBeCalledWith(
-      "http://localhost:3000/apitesturl",
+      `${process.env.MIDDLEWARE}testurl`,
       headers
     );
   });
