@@ -24,7 +24,7 @@ También se puede `Correr sin docker`, cuya explicación esta en la sección de 
 
 Escribiendo `make help` se pueden visualizar los comandos disponibles en el makefile.
 
-#### `make build` 
+### `make build` 
 Construye los contenedores, lleva a cabo las configuraciones e instala las dependencias de docker del frontend y el middleware utilizando cache para ejecutarse más rapido.
 
 ### `make build-nocache`
