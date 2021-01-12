@@ -16,7 +16,7 @@
 
 
  ## ¿Cómo correr el proyecto?
-En la raiz de este repositorio se deben ejecutar `make build` y despues `make start`, despues para ver el frontend debes entrar en tu navegador en ```http://localhost:8081``` y el middleware en ```http://localhost:8082```, en la siguiente sección se explica detenidamente los comandos disponibles.
+En la raiz de este repositorio se deben ejecutar `make build` y luego `make start`, despues para ver el frontend debes entrar en tu navegador en ```http://localhost:8081``` y el middleware en ```http://localhost:8082```, en la siguiente sección se explica detenidamente los comandos disponibles.
 
 También se puede `Correr sin docker`, cuya explicación esta en la sección de correr sin docker.
 
