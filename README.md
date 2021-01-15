@@ -16,9 +16,11 @@
 
 
  ## ¿Cómo correr el proyecto?
- - Debes tener instalado Docker [Windows](https://docs.docker.com/docker-for-windows/install/), [Ubuntu](https://docs.docker.com/engine/install/ubuntu/), [Mac](https://docs.docker.com/docker-for-mac/install/), en Ubuntu además debes instalar [Docker-compose](https://docs.docker.com/compose/install/) o si prefieres no usar Docker ve a la sección [Correr sin docker](#correr-sin-docker).
+ - Debes tener instalado Docker [Windows](https://docs.docker.com/docker-for-windows/install/), [Ubuntu](https://docs.docker.com/engine/install/ubuntu/), [Mac](https://docs.docker.com/docker-for-mac/install/).
  
-En la raiz de este repositorio se deben ejecutar `make build` y luego `make start`, despues para ver el frontend debes entrar en tu navegador en ```http://localhost:8081``` y el middleware en ```http://localhost:8082```, en la siguiente sección se explica detenidamente los [comandos disponibles](#comandos).
+ - En Ubuntu además debes instalar [Docker-compose](https://docs.docker.com/compose/install/) o si prefieres no usar Docker ve a la sección [Correr sin docker](#correr-sin-docker).
+ 
+- En la raiz de este repositorio se deben ejecutar `make build` y luego `make start`, despues para ver el frontend debes entrar en tu navegador en ```http://localhost:8081``` y el middleware en ```http://localhost:8082```, en la siguiente sección se explica detenidamente los [comandos disponibles](#comandos).
 
  ## Comandos
 
